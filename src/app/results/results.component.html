@@ -1,0 +1,7 @@
+<h1>City Results!</h1>
+
+<input type="text" placeholder="enter city name" #cityInput (keyup)=onKey(cityInput)>
+<p *ngFor="let place of filteredCities">
+  {{place.city}},
+  {{place.state}}
+</p>
